@@ -1,0 +1,177 @@
+results = 
+{
+  "settings": {
+    "components": {
+      "code": true,
+      "binaries": false
+    },
+    "targetId": "",
+    "targetDisplayName": ".NET 8.0"
+  },
+  "analysisStartTime": "2024-06-09T11:23:21.7872705Z",
+  "analysisEndTime": "2024-06-09T11:23:26.4083367Z",
+  "privacyMode": "Unrestricted",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 4,
+      "issues": 2,
+      "incidents": 6,
+      "effort": 6
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 6,
+        "Optional": 0,
+        "Potential": 0,
+        "Information": 0
+      },
+      "category": {
+        "Project": 4,
+        "NuGet": 2
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "WebViewBrowser.Bus\\WebViewBrowser.Bus.csproj",
+      "startingProject": true,
+      "issues": 1,
+      "storyPoints": 1,
+      "ruleInstances": [
+        {
+          "incidentId": "d059f66f-aad5-4358-a51d-137ccc00386e",
+          "ruleId": "Project.0002",
+          "projectPath": "WebViewBrowser.Bus\\WebViewBrowser.Bus.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "WebViewBrowser.Bus\\WebViewBrowser.Bus.csproj",
+            "snippet": "Current: net5.0\nNew: net8.0",
+            "protectedSnippet": "Current: net5.0\nNew: net8.0"
+          }
+        }
+      ]
+    },
+    {
+      "path": "WebViewBrowser.Controls\\WebViewBrowser.Controls.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 2,
+      "ruleInstances": [
+        {
+          "incidentId": "05a1e4c5-d48e-4e36-b6a3-166ad558b760",
+          "ruleId": "NuGet.0001",
+          "projectPath": "WebViewBrowser.Controls\\WebViewBrowser.Controls.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "WebViewBrowser.Controls\\WebViewBrowser.Controls.csproj",
+            "snippet": "Microsoft.WinUI, 3.0.0-preview4.210210.4\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.WinUI, 3.0.0-preview4.210210.4\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.WinUI 3.0.0-preview4.210210.4"
+          }
+        },
+        {
+          "incidentId": "39cb39f4-073b-442b-a7cd-fca35fa1fad5",
+          "ruleId": "Project.0002",
+          "projectPath": "WebViewBrowser.Controls\\WebViewBrowser.Controls.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "WebViewBrowser.Controls\\WebViewBrowser.Controls.csproj",
+            "snippet": "Current: net5.0-windows10.0.18362.0\nNew: net8.0",
+            "protectedSnippet": "Current: net5.0-windows10.0.18362.0\nNew: net8.0"
+          }
+        }
+      ]
+    },
+    {
+      "path": "WebViewBrowser\\WebViewBrowser\\WebViewBrowser.csproj",
+      "startingProject": true,
+      "issues": 2,
+      "storyPoints": 2,
+      "ruleInstances": [
+        {
+          "incidentId": "3e659c65-d18f-4642-a0d1-b61282253a2d",
+          "ruleId": "NuGet.0001",
+          "projectPath": "WebViewBrowser\\WebViewBrowser\\WebViewBrowser.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "WebViewBrowser\\WebViewBrowser\\WebViewBrowser.csproj",
+            "snippet": "Microsoft.WinUI, 3.0.0-preview4.210210.4\n\nRecommendation:\n\nNo supported version found",
+            "protectedSnippet": "Microsoft.WinUI, 3.0.0-preview4.210210.4\n\nRecommendation:\n\nNo supported version found",
+            "label": "Microsoft.WinUI 3.0.0-preview4.210210.4"
+          }
+        },
+        {
+          "incidentId": "62415088-c0f1-4f0e-bd4e-58eb4977c70e",
+          "ruleId": "Project.0002",
+          "projectPath": "WebViewBrowser\\WebViewBrowser\\WebViewBrowser.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "WebViewBrowser\\WebViewBrowser\\WebViewBrowser.csproj",
+            "snippet": "Current: net5.0-windows10.0.18362.0\nNew: net8.0-windows",
+            "protectedSnippet": "Current: net5.0-windows10.0.18362.0\nNew: net8.0-windows"
+          }
+        }
+      ]
+    },
+    {
+      "path": "WebViewBrowser.WPF\\WebViewBrowser.WPF.csproj",
+      "startingProject": true,
+      "issues": 1,
+      "storyPoints": 1,
+      "ruleInstances": [
+        {
+          "incidentId": "0e1dc65d-3b59-4705-961c-4e98ad8e5329",
+          "ruleId": "Project.0002",
+          "projectPath": "WebViewBrowser.WPF\\WebViewBrowser.WPF.csproj",
+          "state": "Active",
+          "location": {
+            "kind": "File",
+            "path": "WebViewBrowser.WPF\\WebViewBrowser.WPF.csproj",
+            "snippet": "Current: net5.0-windows\nNew: net8.0-windows",
+            "protectedSnippet": "Current: net5.0-windows\nNew: net8.0-windows"
+          }
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "Project.0002": {
+      "id": "Project.0002",
+      "description": "Project\u0027s target framework(s) needs to be changed to the new target framework that you selected for this upgrade.\n\nDuring upgrade target framework will be adjusted to correspinding platform when applicable. In some cases project would result in multiple target frameworks after the upgrade if it was using features that now have their own platforms in moderrn .NET frameworks (windows, iOS, Android etc).",
+      "label": "Project\u0027s target framework(s) needs to be changed",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "title": "Overview of porting from .NET Framework to .NET",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265227",
+          "isCustom": false
+        },
+        {
+          "title": ".NET project SDKs",
+          "url": "https://go.microsoft.com/fwlink/?linkid=2265226",
+          "isCustom": false
+        }
+      ]
+    },
+    "NuGet.0001": {
+      "id": "NuGet.0001",
+      "description": "NuGet package is incompatible with selected target framework.\n\nPackage needs to be upgraded to a version supporting selected project target framework. If there no new package versions supporting new target framework, different package needs to be used and all code needs to be upgraded to new API.",
+      "label": "NuGet package is incompatible",
+      "severity": "Mandatory",
+      "effort": 1,
+      "links": [
+        {
+          "url": "https://go.microsoft.com/fwlink/?linkid=2262529",
+          "isCustom": false
+        }
+      ]
+    }
+  }
+}
